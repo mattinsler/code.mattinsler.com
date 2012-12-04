@@ -1,0 +1,229 @@
+
+/* line 3, ../../app/styles/main.scss */
+html, body {
+  font-family: Lato, 'Lucida Grande', Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+  background: #E8E9DB;
+  color: #333;
+}
+
+/* line 18, ../../app/styles/main.scss */
+::selection {
+  background: #E95700;
+  color: white;
+}
+
+/* line 20, ../../app/styles/main.scss */
+.container {
+  min-height: 100%;
+  background: white;
+}
+
+/* line 22, ../../app/styles/main.scss */
+header {
+  text-align: center;
+  position: relative;
+  padding: 5px 182px 20px;
+  border-bottom: 2px solid #E8E9DB;
+}
+/* line 28, ../../app/styles/main.scss */
+header h1, header h2 {
+  font-weight: normal;
+}
+/* line 29, ../../app/styles/main.scss */
+header h1 {
+  font-family: 'Mate SC';
+  font-size: 50px;
+  line-height: 45px;
+}
+/* line 30, ../../app/styles/main.scss */
+header h2 {
+  font-family: 'Kotta One';
+  font-size: 17px;
+  line-height: 1.5em;
+  color: #444;
+  margin-top: 20px;
+}
+/* line 32, ../../app/styles/main.scss */
+header .social-button {
+  border: 2px solid #E8E9DB;
+  width: 28px;
+  height: 28px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -16px;
+  margin-left: -16px;
+  text-indent: -99999px;
+  color: transparent;
+  background: white;
+  z-index: 1337;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+/* line 49, ../../app/styles/main.scss */
+header .social-button::after {
+  border: 1px solid #E8E9DB;
+  content: "";
+  width: 28px;
+  height: 28px;
+  display: block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  text-indent: -99999px;
+  opacity: 0.7;
+  color: transparent;
+}
+/* line 66, ../../app/styles/main.scss */
+header .social-button.github {
+  left: 50%;
+}
+/* line 70, ../../app/styles/main.scss */
+header .social-button.github::after {
+  background: #e95700 url(http://static.tumblr.com/cudvq7c/unKm6q394/social-inverted.png) -130px -1px;
+}
+
+/* line 75, ../../app/styles/main.scss */
+nav {
+  float: left;
+  margin-left: 20px;
+  width: 220px;
+  margin-top: 30px;
+}
+/* line 79, ../../app/styles/main.scss */
+nav ul.nav-list {
+  top: 0;
+  width: 180px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 85, ../../app/styles/main.scss */
+nav ul.nav-list li > a {
+  color: #444;
+  opacity: 0.7;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-shadow: none;
+  text-transform: uppercase;
+  -webkit-transition: background .2s;
+  -moz-transition: background .2s;
+  transition: background .2s;
+}
+/* line 96, ../../app/styles/main.scss */
+nav ul.nav-list li.active > a, nav ul.nav-list li.active > a:hover {
+  opacity: 1;
+  color: white;
+  background: #444;
+}
+/* line 101, ../../app/styles/main.scss */
+nav ul.nav-list li > a:hover {
+  opacity: 1;
+  color: #444;
+  background: #ccc;
+}
+
+nav ul.nav-list ul.section-nav {
+  list-style: none;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+nav ul.nav-list ul.section-nav > li > a {
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
+  padding-left: 30px;
+  text-transform: none;
+  letter-spacing: initial;
+}
+nav ul.nav-list ul.section-nav > li > a:hover {
+  background: #eee;
+}
+
+/* line 109, ../../app/styles/main.scss */
+article {
+  float: left;
+  margin-left: 20px;
+  width: 620px;
+}
+/* line 112, ../../app/styles/main.scss */
+article section {
+  margin-top: 40px;
+}
+/* line 115, ../../app/styles/main.scss */
+article section h3, article section h4 {
+  font-weight: bold;
+}
+/* line 116, ../../app/styles/main.scss */
+article section h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+/* line 117, ../../app/styles/main.scss */
+article section h4 {
+  color: #444;
+  font-size: 22px;
+}
+/* line 119, ../../app/styles/main.scss */
+article section p {
+  color: #444;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+/* line 125, ../../app/styles/main.scss */
+article section p a {
+  color: #E95700;
+}
+/* line 128, ../../app/styles/main.scss */
+article section pre.prettyprint {
+  overflow: auto;
+  border: none;
+  background: #F8F8F8;
+  border: 1px solid #CCC;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  padding: 6px 10px;
+  font-family: monospace;
+}
+article section pre.prettyprint.command {
+  margin-bottom:0;
+  background: #E8E8E8;
+  border-bottom-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  border-bottom: none;
+}
+article section pre.prettyprint.response {
+  margin-top:0;
+  border-top-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+/* line 141, ../../app/styles/main.scss */
+article section code {
+  color: #444;
+  background: #FFE7D8;
+  border: 1px solid #E95700;
+  padding: 2px 3px;
+  font-size: 0.8em;
+}
